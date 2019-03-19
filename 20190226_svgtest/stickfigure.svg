@@ -1,0 +1,75 @@
+<svg id="3589d922-ea7e-4e16-9066-cc15df61058b" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="50%" style="margin-top: 20%" viewBox="0 0 105 115">
+  <defs>
+    <style>
+      .arm-left {
+        animation-name: arm-left;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        transform-origin: 38.0952380952% 22.18%;
+        animation-timing-function: linear;
+      }
+
+      .arm-left .upperarm {
+        animation-name: arm-left-upperarm;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        transform-origin: 21.9047619048% 22.18%;
+        animation-timing-function: ease-in;
+      }
+
+      .arm-right {
+        transform-origin: 61.9047619048% 22.18%;
+        transform: rotate(70deg);
+      }
+
+      .arm-right .upperarm {
+        transform-origin: 78.0952380952% 22.18%;
+      transform: rotate(20deg);
+      }
+
+      @keyframes arm-left {
+        0% {transform: rotate(-90deg);}
+        25% {transform: rotate(90deg);}
+        35% {transform: rotate(45deg);}
+        45% {transform: rotate(90deg);}
+        55% {transform: rotate(45deg);}
+        65% {transform: rotate(90deg);}
+        75% {transform: rotate(45deg);}
+        100% {transform: rotate(-90deg);}
+      }
+
+      @keyframes arm-left-upperarm {
+        0% {transform: rotate(0deg);}
+        25% {transform: rotate(45deg);}
+        35% {transform: rotate(0deg);}
+        45% {transform: rotate(45deg);}
+        55% {transform: rotate(0deg);}
+        65% {transform: rotate(45deg);}
+        85% {transform: rotate(0deg);}
+      }
+    </style>
+  </defs>
+  <title>stickfigure</title>
+  <circle cx="52.5" cy="12.5" r="12.5"/>
+  <rect x="40" y="25" width="25" height="50"/>
+  <g>
+    <g class="arm-left">
+      <rect x="20" y="23" width="20" height="5"/>
+      <rect class="upperarm" y="23" width="20" height="5"/>
+    </g>
+    <g class="arm-right">
+      <rect x="65" y="23" width="20" height="5"/>
+      <rect class="upperarm" x="85" y="23" width="20" height="5"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect x="37.5" y="75" width="5" height="20"/>
+      <rect x="37.5" y="95" width="5" height="20"/>
+    </g>
+    <g>
+      <rect x="62.5" y="75" width="5" height="20"/>
+      <rect x="62.5" y="95" width="5" height="20"/>
+    </g>
+  </g>
+</svg>

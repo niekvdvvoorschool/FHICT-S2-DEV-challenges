@@ -1,0 +1,124 @@
+<svg id="8ed8f101-a9ac-4cc9-80ac-3fbd2cae9c2e" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.26 408">
+  <defs>
+    <style>
+      .d4c34df4-209c-4bc6-b146-4d9e4c2bbc55 {
+        fill: #d61e28;
+      }
+
+      .\31 f02eaaa-9f24-452f-be6c-52359fe4ac26 {
+        fill: #eb212d;
+      }
+
+      .\34 375cfd6-6fce-4e2f-9c95-2b1e6650b00d {
+        fill: #b3b3b3;
+      }
+
+      .\32 5279ce9-c42f-4db2-aed7-e194a6e35845 {
+        fill: #ee4238;
+      }
+
+      .ebecfc76-8cb2-43d7-b279-c60a6769267d {
+        fill: #e4e9e5;
+      }
+
+      .ff9abf50-f5c5-4462-8007-0402e513b5fb {
+        fill: #999;
+      }
+
+      .ecd2e563-c683-4185-9ef6-28625b5aa7e2 {
+        fill: gray;
+      }
+
+      @keyframes draaischijf {
+        0% {transform: rotate(0deg);}
+        15% {transform: rotate(360deg);}
+        50% {transform: rotate(360deg);}
+        80% {transform: rotate(0deg);}
+      }
+
+      @keyframes hoorn {
+        40% {
+        transform: rotate(0deg) translate(0px, 0px);
+        }
+
+        45% {
+        transform: rotate(0deg) translate(0px, -50px);
+        }
+        50% {
+        transform: rotate(5deg) translate(0px, -50px);
+        }
+        55% {
+        transform: rotate(-5deg) translate(0px, -50px);
+        }
+        60% {
+        transform: rotate(5deg) translate(0px, -50px);
+        }
+        65% {
+        transform: rotate(-5deg) translate(0px, -50px);
+        }
+        70% {
+        transform: rotate(5deg) translate(0px, -50px);
+        }
+        75% {
+        transform: rotate(-5deg) translate(0px, -50px);
+        }
+        80% {
+        transform: rotate(5deg) translate(0px, -50px);
+        }
+        85% {
+        transform: rotate(-5deg) translate(0px, -50px);
+        }
+        90% {
+        transform: rotate(5deg) translate(0px, -50px);
+        }
+        95% {
+        transform: rotate(-5deg) translate(0px, -50px);
+        }
+        100% {
+        transform: rotate(0deg) translate(0px, 0px);
+        }
+      }
+
+      .phone-draaischijf {
+        animation-name: draaischijf;
+        animation-duration: 16s;
+        animation-iteration-count:infinite;
+        transform-origin: center;
+        animation-timing-function: linear;
+      }
+
+      .phone-hoorn {
+        animation-name: hoorn;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        transform-origin: 50% 20%;
+      }
+    </style>
+  </defs>
+  <title>phone</title>
+  <g class="phone-hoorn">
+    <path class="d4c34df4-209c-4bc6-b146-4d9e4c2bbc55" d="M559.13,112c-11-39-48-52-48-52s-14-8-79-33-149-27-149-27-84,2-149,27-79,33-79,33-37,13-48,52-7,44-3,51,30,54,30,54,12,23,84-21,54-56,51-63-16-30-16-30-14-21,20-25,85-5,110-5,76,1,110,5,20,25,20,25-13,23-16,30-21,19,51,63,84,21,84,21,26-47,30-54S570.13,151,559.13,112Z"/>
+    <path class="1f02eaaa-9f24-452f-be6c-52359fe4ac26" d="M27.76,205.5c48-9.93,113-57.36,139-77.46-3.18-6.26-8.15-15.25-11.12-20.59-21.28,18.31-73,58.77-137.36,80.91C21.61,194.39,25,200.48,27.76,205.5Z"/>
+    <path class="1f02eaaa-9f24-452f-be6c-52359fe4ac26" d="M538.5,205.5c-48-9.93-113-57.36-139-77.46,3.18-6.26,8.15-15.25,11.13-20.59,21.27,18.31,73,58.77,137.35,80.91Z"/>
+  </g>
+  <g>
+    <rect class="4375cfd6-6fce-4e2f-9c95-2b1e6650b00d" x="412.63" y="386" width="71" height="22" rx="3.5" ry="3.5" transform="translate(896.26 794) rotate(180)"/>
+    <rect class="4375cfd6-6fce-4e2f-9c95-2b1e6650b00d" x="82.13" y="386" width="71" height="22" rx="3.5" ry="3.5"/>
+    <path class="25279ce9-c42f-4db2-aed7-e194a6e35845" d="M397.63,65c0-11-9-10-9-10h-23s-5.5,0-5.5,5.5V111H205.63V60.5c0-5.5-5.5-5.5-5.5-5.5h-23s-9-1-9,10c0,208-100,237-100,237v79c0,12,13,11,13,11s114.78-1,201.75-1,201.75,1,201.75,1,13,1,13-11V302S397.63,273,397.63,65Z"/>
+    <polygon class="1f02eaaa-9f24-452f-be6c-52359fe4ac26" points="283.13 313 282.63 313 68.13 313 68.13 341 282.63 341 283.13 341 497.63 341 497.63 313 283.13 313"/>
+    <polygon class="ebecfc76-8cb2-43d7-b279-c60a6769267d" points="283.13 357 282.63 357 246.13 357 246.13 372 282.63 372 283.13 372 319.63 372 319.63 357 283.13 357"/>
+    <path class="1f02eaaa-9f24-452f-be6c-52359fe4ac26" d="M73.7,299.77C182,255.08,177.33,168.06,189.13,55h-12s-9-1-9,10C168.13,243.22,94.72,290,73.7,299.77Z"/>
+  </g>
+  <g class="phone-draaischijf">
+    <circle class="ff9abf50-f5c5-4462-8007-0402e513b5fb" cx="283.13" cy="205" r="100"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="283.13" cy="205" r="60"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="283.48" cy="125.1" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="283.48" cy="285.1" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="203.13" cy="204.75" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="363.13" cy="204.75" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="226.56" cy="148.18" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="339.7" cy="261.32" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="226.56" cy="261.32" r="16"/>
+    <circle class="ecd2e563-c683-4185-9ef6-28625b5aa7e2" cx="339.7" cy="148.18" r="16"/>
+  </g>
+</svg>

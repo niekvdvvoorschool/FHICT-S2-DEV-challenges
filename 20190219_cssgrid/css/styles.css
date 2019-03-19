@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+body, html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	min-height: 100%;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+			'header header header header header header'
+			'content content content sidebar sidebar sidebar'
+			'footer footer footer footer footer footer';
+}
+
+.header {
+	background-color: white;
+	height: 60px;
+
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.header .logo-large {
+	height: 100%;
+	margin: 0px;
+	margin-left: 30px;
+}
+
+
+.header .logo-small {
+	display: none;
+	height: 100%;
+	margin: 0px;
+	margin-left: 10px;
+}
+
+.header .search {
+	position: absolute;
+	top: 16px;
+	padding: 5px 10px;
+	width: 300px;
+	left: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+	.header .logo-small {
+		display: block;
+	}
+
+	.header .logo-large {
+		display: none;
+	}
+
+	.header .search {
+		left: 100px;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+				'header'
+				'content'
+				'sidebar'
+				'footer';
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.header .search {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.header .search {
+		width: 100px;
+	}
+}
+
+.content {
+	margin: 25px 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content .video {
+	width: 100%;
+}
+
+.content h3 {
+	font-size: 20px;
+	margin-top: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content .creator {
+	margin-top: 15px;
+	align-items: center;
+	height: 55px;
+	display: flex;
+}
+
+.content .creator img {
+	width: 55px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+content .creator div {
+
+	display: inline-block;
+}
+
+.content .creator .name {
+	font-size: 13px;
+	font-weight: 800;
+	margin-left: 15px;
+}
+
+.content .creator .published {
+	font-size: 13px;
+	color: gray;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.content .description {
+	font-size: 14px;
+}
+
+.content .description p {
+	margin-top: 14px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.sidebar {
+	padding: 20px;
+	width: 25vw;
+}
+
+.image { grid-area: image; }
+.title { grid-area: title; }
+.creator { grid-area: creator; }
+.views { grid-area: views; }
+
+.sidebar .recommended {
+	display: grid;
+	grid-template-areas:
+			'image text';
+}
+
+.sidebar .recommended {
+	margin: 0px!important;
+	padding: 0px;
+	font-family: 12px;
+	font-family: "Open Sans", SansSerif;
+}
+
+.sidebar .recommended .image {
+	width: 10vw;
+	margin-right: 10px;
+}
+
+.sidebar .recommended .image img {
+	width: 100%;
+}
+
+.sidebar .recommended .text .title {
+	font-size: 12px;
+	font-weight: 600;
+	width: 15vw;
+}
+
+.sidebar .recommended .text .creator {
+	font-size: 12px;
+	padding-bottom: 0px;
+	margin: 6px 0px;
+}
+
+.sidebar .recommended .text .views {
+	font-style: italic;
+	color: gray;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar .recommended .image {
+		width: 25vw;
+		margin-right: 10px;
+	}
+
+	.sidebar {
+		width: 75vw;
+		margin: 0px auto;
+	}
+
+	.sidebar .recommended .text .title {
+		width: 50vw;
+	}
+}
+
+.footer {
+	padding: 2vw;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	background-color: rgb(80,80,80);
+}
+
+.footer a {
+	color: white;
+}
