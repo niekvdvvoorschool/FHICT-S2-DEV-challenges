@@ -1,0 +1,108 @@
+.fsm-overlay {
+	z-index: 999;
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0%;
+	background-color: blue;
+	text-align: center;
+	white-space: nowrap;
+
+	transition: width .35s;
+}
+
+.fsm-toggle {
+	z-index: 1000;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	background-color: white;
+}
+
+.fsm-toggle .fsm-hamburger {
+	width: 100%;
+	height: 100%;
+}
+
+.fsm-toggle .fsm-hamburger div {
+	position: relative;
+	height: 20%;
+	background-color: black;
+
+	transition: width .15s, transform 0.3s;
+}
+
+.fsm-toggle .fsm-hamburger div:not(:first-child) {
+	margin-top: 20%;
+}
+
+.fsm-toggle .fsm-hamburger .fsm-two {
+	width: 75%;
+}
+
+.fsm-toggle .fsm-hamburger .fsm-three {
+	width: 50%;
+}
+
+.fsm-toggle:hover .fsm-hamburger div {
+	width: 100%;
+}
+
+.fsm-open {
+	width: 100%;
+}
+
+.fsm-toggle.fsm-active .fsm-hamburger .fsm-one {
+	width: 100%;
+	transform: translate(0%,200%) rotate(45deg);
+}
+
+.fsm-toggle.fsm-active .fsm-hamburger .fsm-two {
+	width: 0%;
+}
+
+.fsm-toggle.fsm-active .fsm-hamburger .fsm-three {
+	width: 100%;
+	transform: translate(0%,-200%) rotate(-45deg);
+}
+
+.fsm-overlay .fsm-left {
+	width: 60%;
+	height: 100%;
+}
+
+.fsm-overlay .fsm-left .fsm-image {
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 40%;
+	background-size: cover;
+	background-position: center;
+}
+
+.fsm-overlay .fsm-right {
+	position: absolute;
+	overflow: hidden;
+	top: 0%;
+	bottom: 0%;
+	left: 60%;
+	right: 0%;
+	background-color: black;
+}
+
+.fsm-overlay .fsm-right .fsm-content {
+
+}
+
+.fsm-overlay .fsm-right .fsm-footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: red;
+	height: 50px;
+}
