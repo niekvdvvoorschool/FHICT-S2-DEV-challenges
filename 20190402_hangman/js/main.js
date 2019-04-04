@@ -89,15 +89,11 @@ $( document ).ready(function() {
     }
 
     function Win() {
-        // stop the game, so the player isn't able to guess more letters
-        gameactive = false;
         // show user he has won
         console.log("You won!!!");
     }
 
     function Lose() {
-        // stop the game, so the player isn't able to guess more letters
-        gameactive = false;
         // show user he has lost
         console.log("You lost...");
     }
@@ -114,7 +110,7 @@ $( document ).ready(function() {
             answer = chosenword;
 
             // update frontend #answersofar
-            AnswerSoFar()
+            AnswerSoFar();
 
             // show the game, hide the options
             $("#game").show();

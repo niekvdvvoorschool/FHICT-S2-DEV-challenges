@@ -1,133 +1,89 @@
-// wait until DOM loaded
-$( document ).ready(function() {
+// global var
+var answer = "";
+var possibleanswers = ["bench", "expectation", "gravel", "lion", "wrestle", "orientation", "wound", "project", "cathedral", "include"];
+var answersofar = "";
+var maxwronganswers = 10;
+var wronganwers = 0;
+var guessedletters = [];
 
-    // global var
-    var answer = "";
-    var answersofar = "";
-    var maxwronganswers = 10;
-    var wronganwers = 0;
-    var guessedletters = [];
-    var gameactive = false;
+function initialize() {
+    // add event listeners to all letter buttons
+    var letterbuttons = document.getElementsByClassName("letterbutton");
 
-    function CheckChosenWord(word) {
-        // check if word is filled in
-        if (word == "") {
-            return "no value";
-        }
+    for (var i = 0; i < letterbuttons.length; i++) {
+        letterbuttons[i].addEventListener('click', GuessLetter, false);
+    }
+}
 
-        // check if word doesn't contain any other characters than letters
-        else if (!/^[a-zA-Z]+$/.test(word)) {
-            return "only letters allowed";
-        }
+function newgame() {
+    // api link: https://random-word-api.herokuapp.com/word?key=M05QB30L&number=1
+    answer = possibleanswers[Math.floor(Math.random() * possibleanswers.length)];
+    answersofar = "";
+    wronganwers = 0;
+    guessedletters = [];
 
-        // valid word
-        else
-        {
-            return "valid";
-        }
+    // make answer uppercase because letter buttons return uppercase letters
+    answer = answer.toUpperCase();
+
+    // add event listeners to all letter buttons
+    var letterbuttons = document.getElementsByClassName("letterbutton");
+    for (var i = 0; i < letterbuttons.length; i++) {
+        letterbuttons[i].style.display = "inline-block";
     }
 
-    function AnswerSoFar() {
-        // create temporary variable to build the answersofar variable
-        var answersofar_tmp = "";
+    console.log("the answer is: " + answer);
+}
 
-        // loop trough each letter of the answer
-        for (var i = 0; i < answer.length; i++) {
-            // check if the letter of the answer is guessed
-            if(!(jQuery.inArray(answer.charAt(i), guessedletters) < 0)) {
-                // if this letter is guessed, add it to the answersofar_tmp variable
-                answersofar_tmp += answer.charAt(i);
-            } else {
-                // if it hasn't been guessed, add a "." to the answersofar_tmp variable
-                answersofar_tmp += ".";
-            }
-        }
+function AnswerSoFar() {
+    // create temporary variable to build the answersofar variable
+    var answersofar_tmp = "";
 
-        // update global answersofar variable
-        answersofar = answersofar_tmp;
-
-        // update frontend #answersofar
-        $("#answersofar").text(answersofar);
-    }
-
-    function GuessLetter(letter) {
-        // check if there is a game active (prevent that the user is able to guess letters after he won/lost)
-        if (gameactive == true) {
-
-            // add letter to the guessedLetters array
-            guessedletters.push(letter);
-
-            // check if the answer contains the guessed letter
-            if (answer.indexOf(letter) > -1) {
-                // answer contains the guessed letter, good guess
-
-                // update answer so far
-                AnswerSoFar();
-
-                // check if answersofar equals the answer
-                if (answersofar == answer) {
-                    // player has won
-                    Win();
-                }
-
-            } else {
-                // answer doesn't contain the guessed letter
-
-                // update wronganswers
-                wronganwers++;
-
-                // update hangman image
-                $("#hangman").attr("src", "/assets/img/hangman-" + wronganwers + ".jpg");
-
-                // check if player reached the max amount of wrong answers
-                if (wronganwers == maxwronganswers) {
-                    // player has lost
-                    Lose();
-                }
-            }
-        }
-    }
-
-    function Win() {
-        // show user he has won
-        console.log("You won!!!");
-    }
-
-    function Lose() {
-        // show user he has lost
-        console.log("You lost...");
-    }
-
-    // function get's called when the player submits a word
-    $("#chooseword-submit").click(function () {
-        // create local variable to save the chosenword (uppercase because letterbuttons are also uppercase)
-        var chosenword = $("#chooseword-text").val().toUpperCase();
-
-        // check if meets the minimum requirements (not empty, only letters)
-        if (CheckChosenWord(chosenword) == "valid") {
-
-            // set chosenword as answer
-            answer = chosenword;
-
-            // update frontend #answersofar
-            AnswerSoFar();
-
-            // show the game, hide the options
-            $("#game").show();
-            $("#options").hide();
-
-            // set game to active (player able to guess letters)
-            gameactive = true;
+    // loop trough each letter of the answer
+    for (var i = 0; i < answer.length; i++) {
+        if (guessedletters.includes(answer.charAt(i))) {
+            answersofar_tmp += answer.charAt(i);
         } else {
-            // show error
-            console.log(CheckChosenWord($("#chooseword-text").val()));
+            answersofar_tmp += ".";
         }
+    }
 
-    });
+    // update global answersofar variable
+    answersofar = answersofar_tmp;
 
-    // function get's called when the player clicks a letter
-    $(".letterbutton").click(function () {
-        GuessLetter($(this).val());
-        $(this).hide();
-    });
-});
+    console.log(answersofar);
+}
+
+function GuessLetter() {
+    // store guessed letter in local variable
+    var letter = this.value;
+    // hide letter so user isn't able to click it anymore
+    this.style.display = "none";
+    // add letter to the array of guessed letters
+    guessedletters.push(letter);
+
+    if (answer.includes(letter)) {
+        AnswerSoFar()
+
+        if (answersofar == answer) {
+            console.log("You won!!!");
+            newgame();
+        }
+    } else {
+        console.log("incorrect, " + (maxwronganswers - wronganwers - 1) + " lives left");
+
+        // update wronganswers
+        wronganwers++;
+
+        // check if player reached the max amount of wrong answers
+        if (wronganwers == maxwronganswers) {
+            console.log("you lost...")
+        }
+    }
+};
+
+// add eventlisteners to buttons
+initialize();
+// start a game
+newgame();
+// display dots that represent the answer
+AnswerSoFar();
