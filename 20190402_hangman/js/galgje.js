@@ -1,61 +1,88 @@
 // global var
+var APIkey = "jecgaa";
+var newgamebutton = document.getElementById("newgame");
+var answersofartext = document.getElementById("answersofar");
+var message = document.getElementById("message");
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+
 var answer = "";
-//var possibleanswers = ["bench", "expectation", "gravel", "lion", "wrestle", "orientation", "wound", "project", "cathedral", "include"];
 var answersofar = "";
 var maxwronganswers = 10;
 var wronganwers = 0;
 var guessedletters = [];
+var gameactive = false;
 
-var canvas = document.getElementById("myCanvas");
-var context = canvas.getContext("2d");
-
-function initialize() {
+function Initialize() {
     // add event listeners to all letter buttons
     var letterbuttons = document.getElementsByClassName("letterbutton");
 
     for (var i = 0; i < letterbuttons.length; i++) {
         letterbuttons[i].addEventListener('click', GuessLetter, false);
     }
+
+    newgamebutton.addEventListener('click', NewGame, false);
 }
 
 function GetWordAPI() {
     // Create the XHR Object
-    let xhr = new XMLHttpRequest;
+    let xhr = new XMLHttpRequest
     //Call the open function, GET-type of request, url, true-asynchronous
-    xhr.open('GET', 'https://random-word-api.herokuapp.com/word?key=NPTOHRGC&number=1', true)
+    xhr.open('GET', 'https://random-word-api.herokuapp.com/word?key=' + APIkey + '&number=1', true)
     //call the onload
     xhr.onload = function()
     {
         //check if the status is 200(means everything is okay)
         if (this.status === 200)
         {
-            //return server response as an object with JSON.parse
+            // return server response as an object with JSON.parse
             var words = JSON.parse(this.responseText);
-            answer =  words[0];
+
+            // check if the word contains a dash, if it does, choose new word
+            if (words[0].includes("-")) {
+                GetWordAPI();
+            } else {
+                // set word as answer
+                answer = words[0];
+
+                // make answer uppercase because letter buttons return uppercase letters
+                answer = answer.toUpperCase();
+
+                // show answer dots
+                AnswerSoFar();
+            }
         }
     }
     //call send
     xhr.send();
 }
 
-
-function newgame() {
+function NewGame() {
+    // get a new answer
     GetWordAPI();
 
+    // re(set) all variables
     answersofar = "";
     wronganwers = 0;
     guessedletters = [];
 
-    // make answer uppercase because letter buttons return uppercase letters
-    answer = answer.toUpperCase();
+    // hide newgame button
+    newgamebutton.style.display = "none";
+
+    // clear canvas
+    context.clearRect(0, 0, canvas.width, canvas.height);
 
     // add event listeners to all letter buttons
-    //var letterbuttons = document.getElementsByClassName("letterbutton");
-    //for (var i = 0; i < letterbuttons.length; i++) {
-    //    letterbuttons[i].style.display = "inline-block";
-    //}
+    var letterbuttons = document.getElementsByClassName("letterbutton");
+    for (var i = 0; i < letterbuttons.length; i++) {
+        letterbuttons[i].style.visibility = "visible";
+    }
 
-    console.log("the answer is: " + answer);
+    // reset message
+    message.innerHTML = "";
+
+    // set game to active
+    gameactive = true;
 }
 
 function AnswerSoFar() {
@@ -67,18 +94,19 @@ function AnswerSoFar() {
         if (guessedletters.includes(answer.charAt(i))) {
             answersofar_tmp += answer.charAt(i);
         } else {
-            answersofar_tmp += ".";
+            answersofar_tmp += " . ";
         }
     }
 
     // update global answersofar variable
     answersofar = answersofar_tmp;
 
-    console.log(answersofar);
+    answersofartext.innerHTML = answersofar;
 }
 
 function DrawHangman() {
 
+    context.beginPath();
     switch (wronganwers) {
         case 1:
             // beam vertical
@@ -88,6 +116,7 @@ function DrawHangman() {
 
         case 2:
             // beam bottom
+            context.moveTo(25,275);
             context.lineTo(175,275);
             break;
 
@@ -130,6 +159,7 @@ function DrawHangman() {
 
         case 9:
             // leg left
+            context.moveTo(120,190);
             context.lineTo(100,240)
             // leg right
             context.moveTo(120,190);
@@ -146,41 +176,45 @@ function DrawHangman() {
     }
 
     context.stroke();
+    context.closePath();
 }
 
 function GuessLetter() {
-    // store guessed letter in local variable
-    var letter = this.value;
-    // hide letter so user isn't able to click it anymore
-    this.style.display = "none";
-    // add letter to the array of guessed letters
-    guessedletters.push(letter);
+    if (gameactive) {
+        // store guessed letter in local variable
+        var letter = this.value;
+        // hide letter so user isn't able to click it anymore
+        this.style.visibility = "hidden";
+        // add letter to the array of guessed letters
+        guessedletters.push(letter);
 
-    if (answer.includes(letter)) {
-        AnswerSoFar()
+        if (answer.includes(letter)) {
+            AnswerSoFar();
 
-        if (answersofar == answer) {
-            console.log("You won!!!");
-            newgame();
-        }
-    } else {
-        console.log("incorrect, " + (maxwronganswers - wronganwers - 1) + " lives left");
+            if (answersofar == answer) {
+                document.getElementById("message").innerHTML = "You won!!!";
+                newgamebutton.style.display = "block";
 
-        // update wronganswers
-        wronganwers++;
+                gameactive = false;
+            }
+        } else {
+            // update wronganswers
+            wronganwers++;
 
-        DrawHangman();
+            DrawHangman();
 
-        // check if player reached the max amount of wrong answers
-        if (wronganwers == maxwronganswers) {
-            console.log("you lost...")
+            // check if player reached the max amount of wrong answers
+            if (wronganwers == maxwronganswers) {
+                message.innerHTML = "You lost... the answer was " + answer;
+                newgamebutton.style.display = "block";
+
+                gameactive = false;;
+            }
         }
     }
 };
 
-// add eventlisteners to buttons
-initialize();
+// add event listeners to buttons
+Initialize();
 // start a game
-newgame();
-// display dots that represent the answer
-//AnswerSoFar();
+NewGame();

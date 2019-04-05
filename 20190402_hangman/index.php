@@ -12,7 +12,7 @@
 <div id="game">
     <div id="buttons">
         <?php
-        $arr = str_split("ABCDEFGHIJKLMNOPQRSTUVXYZ");
+        $arr = str_split("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
         
         foreach ($arr as &$value) {
             echo "<input type=\"submit\" class=\"letterbutton\" value=\"" . $value . "\">";
@@ -21,12 +21,13 @@
     </div>
 </div>
 
-<p id="texttest">...</p>
+<h3 id="answersofar"></h3>
 
-<canvas id="myCanvas" width="200" height="300" style="border:2px solid #000;">
+<h1 id="message"></h1>
+<button id="newgame" style="margin-bottom: 20px">new game</button>
 
-<!--<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/main.js"></script>-->
+<canvas id="canvas" width="200" height="300" style="border:2px solid #000;">
+
 <script src="/js/galgje.js"></script>
 </body>
 </html>
