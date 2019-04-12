@@ -1,0 +1,94 @@
+body, html {
+  width: 100%;
+  min-height: 100%;
+
+  color: #fff;
+}
+
+.page-blue {
+  background-color: #1D69A7;
+}
+
+.btn {
+  border-radius: 1000px;
+  display: inline-block;
+  font-family: $font-primary-bold;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+
+  &:hover {
+    background-color: rgb(235,118,0);
+  }
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.everythingabout {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.subject {
+  font-size: 85px;
+}
+
+.item {
+  align-items: center;
+  position: relative;
+
+  transform: translate(20px,0px);
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 5px 0px 15px 0px;
+    color: rgba(255,255,255,0.7);
+  }
+
+
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline:after {
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 8px solid #fff;
+  transform: translate(-50%);
+}
+
+.text-center { text-align: center!important; }
+
+.col-1 { flex: 1; }
+.col-2 { flex: 2; }
+.col-3 { flex: 3; }
+.col-4 { flex: 4; }
+.col-5 { flex: 5; }
+.col-6 { flex: 6; }
+.col-7 { flex: 7; }
+.col-8 { flex: 8; }
+.col-9 { flex: 9; }
+.col-10 { flex: 10; }
+.col-11 { flex: 11; }
+.col-12 { flex: 12; }

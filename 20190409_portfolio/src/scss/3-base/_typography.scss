@@ -1,0 +1,12 @@
+@include font('Montserrat Black', '/assets/fonts/Montserrat-Black');
+@include font('Montserrat Bold', '/assets/fonts/Montserrat-Bold');
+@include font('Cambria Italic', '/assets/fonts/cambriai');
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-primary-black;
+  color: white;
+}
+
+p {
+  font-family: $font-secondary-italic;
+}
