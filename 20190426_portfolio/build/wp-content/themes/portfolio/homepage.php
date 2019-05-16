@@ -68,13 +68,13 @@
                     <p>"You develop media products by programming and integrating proofs of concepts based on validated requirements."</p>
                 </div>
             </a>
-            <a href="#">
+            <a href="/leerdoelen/3-user-experience-user-centered-design">
                 <div class="leerdoel uex">
                     <h1>3. USER EXPERIENCE & USER CENTERED DESIGN</h1>
                     <p>"You design prototypes and user research, based on preselected methodologies and on user consults."</p>
                 </div>
             </a>
-            <a href="#">
+            <a href="/leerdoelen/4-project">
                 <div class="leerdoel pt">
                     <h1>4. PROJECT</h1>
                     <p>"You deliver complete media products for your client that meet the client’s needs."</p>
@@ -90,6 +90,12 @@
                 <div class="leerdoel">
                     <h1>5.B. PROFESSIONAL DEVELOPMENT</h1>
                     <p>"You effectively communicate with your stakeholders."</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="leerdoel">
+                    <h1>5.C. PROFESSIONAL DEVELOPMENT</h1>
+                    <p>"You have the learning skills and reflective abilities to continue with your bachelor in higher education."</p>
                 </div>
             </a>
         </div>
