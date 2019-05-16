@@ -1,4 +1,4 @@
-# CSSgrid
+# SVG animaties
 
 Voor mijn portfolio wil ik graag SVG animaties gebruiken, gewoon omdat ze er heel vet uit zien. Ik heb gekozen om SVG animaties te gaan onderzoeken in plaats van GIF’s te gebruiken aangezien SVG’svaak kleinere bestanden zijn en daardoor sneller inladen, en deze goed schaalbaar zijn onder kwaliteit te verliezen.
 
