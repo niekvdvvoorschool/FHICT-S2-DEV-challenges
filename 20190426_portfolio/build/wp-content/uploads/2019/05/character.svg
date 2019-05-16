@@ -1,0 +1,113 @@
+  <svg id="40b6cc3c-da6b-4867-a112-d20657b17cc6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1903 1772">
+  <defs>
+    <style>
+      .fb367363-6948-4689-afb0-54da709e8ccf {
+        fill: #ed1c24;
+      }
+
+      .\31 af4cf8f-ce35-4b94-ad10-420fd3656395 {
+        fill: #201a69;
+      }
+
+      .\34 9fd7ae4-a560-4c0b-9a3e-385320f6cd12 {
+        fill: #f3997d;
+      }
+
+      .\31 9490a47-597b-4949-8a03-edb3ce674cf0 {
+        fill: #f8c299;
+      }
+
+      .c45be48e-34b9-4b63-aeb4-65eeb40017f0 {
+        fill: #f4997d;
+      }
+
+      .\33 1d8e892-a096-4f4d-8361-5bc7eb880eef {
+        fill: #000001;
+      }
+
+      .f719ad5e-a674-4185-8f97-7264d6306260 {
+        fill: #00192b;
+      }
+
+      .\34 96a5783-eb3b-4654-a438-cd52a1b0db9f {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+
+      .\35 04b9442-b3f8-4a2c-b52f-9ee3a9df7569 {
+        fill: #42210b;
+      }
+
+      @keyframes draaischijf {
+        0% {transform: rotate(0deg);}
+        50% {transform: rotate(50deg);}
+        100% {transform: rotate(0deg);}
+      }
+
+      .arm-left {
+      animation-name: draaischijf;
+      animation-duration: 4s;
+      animation-iteration-count:infinite;
+      transform-origin: 0% 0%;
+      animation-timing-function: linear;
+      }
+    </style>
+  </defs>
+  <title>character</title>
+  <path class="fb367363-6948-4689-afb0-54da709e8ccf" d="M2929.6,2585V2313.7c0-104.07-84.2-188.43-188.06-188.43s-188.07,84.36-188.07,188.43V2585Z" transform="translate(-1788.91 -1419)"/>
+  <path class="1af4cf8f-ce35-4b94-ad10-420fd3656395" d="M2741.31,2772.87c103.74,0,187.84-84.09,187.84-187.83H2553.47c0,103.74,84.1,187.83,187.84,187.83Z" transform="translate(-1788.91 -1419)"/>
+  <path class="49fd7ae4-a560-4c0b-9a3e-385320f6cd12" d="M2737.55,2006.49h0a56.36,56.36,0,0,1,56.36,56.36V2138a56.35,56.35,0,0,1-56.36,56.35h0A56.35,56.35,0,0,1,2681.2,2138v-75.13A56.35,56.35,0,0,1,2737.55,2006.49Z" transform="translate(-1788.91 -1419)"/>
+  <g>
+    <g>
+      <g>
+        <circle class="19490a47-597b-4949-8a03-edb3ce674cf0" cx="1138.36" cy="322.64" r="50.72"/>
+        <circle class="c45be48e-34b9-4b63-aeb4-65eeb40017f0" cx="1138.36" cy="322.64" r="21.34"/>
+      </g>
+      <g>
+        <circle class="19490a47-597b-4949-8a03-edb3ce674cf0" cx="762.69" cy="322.64" r="50.72"/>
+        <circle class="49fd7ae4-a560-4c0b-9a3e-385320f6cd12" cx="762.69" cy="322.64" r="21.34"/>
+      </g>
+    </g>
+    <path class="19490a47-597b-4949-8a03-edb3ce674cf0" d="M2740.71,1420.44h0c103.74,0,187.84,84.1,187.84,187.84v308c0,103.74-84.1,187.84-187.84,187.84h0c-103.74,0-187.84-84.1-187.84-187.84v-308C2552.87,1504.54,2637,1420.44,2740.71,1420.44Z" transform="translate(-1788.91 -1419)"/>
+    <g>
+      <ellipse class="31d8e892-a096-4f4d-8361-5bc7eb880eef" cx="877.27" cy="273.09" rx="18.78" ry="34.97"/>
+      <ellipse class="31d8e892-a096-4f4d-8361-5bc7eb880eef" cx="1027.54" cy="273.09" rx="18.78" ry="34.97"/>
+    </g>
+    <path class="49fd7ae4-a560-4c0b-9a3e-385320f6cd12" d="M2740.71,1727h0a37.57,37.57,0,0,1,37.57,37.57v37.57a37.56,37.56,0,0,1-37.57,37.56h0a37.56,37.56,0,0,1-37.57-37.56v-37.57A37.57,37.57,0,0,1,2740.71,1727Z" transform="translate(-1788.91 -1419)"/>
+    <g>
+      <circle class="f719ad5e-a674-4185-8f97-7264d6306260" cx="765.02" cy="135.24" r="75.14"/>
+      <rect class="f719ad5e-a674-4185-8f97-7264d6306260" x="795.08" width="413.24" height="150.27" rx="75.14" ry="75.14"/>
+    </g>
+    <line class="496a5783-eb3b-4654-a438-cd52a1b0db9f" x1="862.09" y1="514" x2="1027.09" y2="514"/>
+  </g>
+  <g class="arm-right">
+    <g>
+      <rect class="19490a47-597b-4949-8a03-edb3ce674cf0" x="3450.82" y="2172.1" width="195.2" height="63.56" rx="31.78" ry="31.78" transform="translate(-1796.58 -1406.6) rotate(-0.2)"/>
+      <rect class="19490a47-597b-4949-8a03-edb3ce674cf0" x="3489.04" y="2147.24" width="202.86" height="113.53" rx="56.73" ry="56.73" transform="translate(-1796.58 -1406.45) rotate(-0.2)"/>
+    </g>
+    <rect class="fb367363-6948-4689-afb0-54da709e8ccf" x="1296.09" y="735" width="400" height="100" rx="50" ry="50"/>
+    <rect class="fb367363-6948-4689-afb0-54da709e8ccf" x="996.09" y="735" width="400" height="100" rx="50" ry="50"/>
+  </g>
+  <g class="arm-left">
+    <g>
+      <rect class="19490a47-597b-4949-8a03-edb3ce674cf0" x="1834.79" y="2172.34" width="195.2" height="63.56" rx="31.78" ry="31.78" transform="translate(-1796.59 -1412.24) rotate(-0.2)"/>
+      <rect class="19490a47-597b-4949-8a03-edb3ce674cf0" x="1788.91" y="2147.24" width="202.86" height="113.53" rx="56.73" ry="56.73" transform="translate(-1796.59 -1412.39) rotate(-0.2)"/>
+    </g>
+    <rect class="fb367363-6948-4689-afb0-54da709e8ccf" x="1995.81" y="2154" width="400" height="100" rx="50" ry="50" transform="translate(2602.72 2989.01) rotate(-180)"/>
+    <rect class="fb367363-6948-4689-afb0-54da709e8ccf" x="2295.81" y="2154" width="400" height="100" rx="50" ry="50" transform="translate(3202.72 2989.01) rotate(-180)"/>
+  </g>
+  <g>
+    <g>
+      <rect class="1af4cf8f-ce35-4b94-ad10-420fd3656395" x="981.66" y="1231" width="108.2" height="324.6" rx="54.1" ry="54.1"/>
+      <rect class="1af4cf8f-ce35-4b94-ad10-420fd3656395" x="981.66" y="1447.4" width="108.2" height="324.6" rx="54.1" ry="54.1"/>
+      <path class="504b9442-b3f8-4a2c-b52f-9ee3a9df7569" d="M2879.21,3082.61A108.39,108.39,0,0,0,2770.82,3191h216.79A108.39,108.39,0,0,0,2879.21,3082.61Z" transform="translate(-1788.91 -1419)"/>
+    </g>
+    <g>
+      <rect class="1af4cf8f-ce35-4b94-ad10-420fd3656395" x="2597.29" y="2650" width="108.2" height="324.6" rx="54.1" ry="54.1" transform="translate(3513.87 4205.6) rotate(180)"/>
+      <rect class="1af4cf8f-ce35-4b94-ad10-420fd3656395" x="2597.29" y="2866.4" width="108.2" height="324.6" rx="54.1" ry="54.1" transform="translate(3513.87 4638.4) rotate(-180)"/>
+      <path class="504b9442-b3f8-4a2c-b52f-9ee3a9df7569" d="M2596.84,3082.61A108.39,108.39,0,0,1,2705.24,3191H2488.45A108.39,108.39,0,0,1,2596.84,3082.61Z" transform="translate(-1788.91 -1419)"/>
+    </g>
+  </g>
+</svg>

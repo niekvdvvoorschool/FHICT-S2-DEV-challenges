@@ -1,0 +1,80 @@
+.page-template-timelinepage {
+  padding-bottom: 150px;
+
+  .everythingabout {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: -10px;
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+
+    p {
+      padding-top: 65px;
+      font-size: 20px;
+      font-style: oblique;
+    }
+
+    h1 {
+      font-size: 80px;
+    }
+  }
+
+  .timeline {
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+
+    .connector {
+      display: block;
+      margin: 0px auto;
+    }
+
+    .item {
+      position: relative;
+      padding: 50px;
+      background-color: white;
+      border-radius: 10px;
+
+      -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+      -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+      box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+
+      h3 {
+        font-family: $font-primary;
+        color: rgba(0,0,0,0.8);
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-family: $font-default;
+        line-height: 1.5;
+        color: rgba(0,0,0,0.5);
+      }
+
+      .btn {
+        text-align: center;
+        background: rgb(255,128,0);
+        color: white;
+        display: inline-block;
+        padding: 10px 20px;
+        font-family: $font-default;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 10px 0px;
+      }
+    }
+  }
+}

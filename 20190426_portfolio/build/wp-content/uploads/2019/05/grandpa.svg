@@ -1,0 +1,218 @@
+<svg id="42e00ff7-5389-4877-9565-bfc4e18e1c48" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.15 234.81">
+  <defs>
+    <style>
+      .d7942f66-1d7d-4f61-962c-8a4917ecae7e {
+        fill: #ffa726;
+      }
+
+      .\35 ad00e7f-7862-4128-a0a0-6a1d1ecceb07 {
+        fill: #f8c299;
+      }
+
+      .\30 400c3a2-393c-4e73-b84f-7777ddee81c4 {
+        fill: #f3997d;
+      }
+
+      .\39 24d3410-33bb-4dc6-bfe7-a56c6f7563e5 {
+        fill: #00192b;
+      }
+
+      .\32 dba86c9-10e3-440a-b2f3-dae30ea7bfb6 {
+        fill: #f4997d;
+      }
+
+      .\30 faec64c-07aa-4249-9f46-99dc30630129 {
+        fill: #000001;
+      }
+
+      .\32 564ecf8-e9ae-45dc-a2aa-4a7ed1c57dc8 {
+        fill: #cb3554;
+      }
+
+      .\30 3c99511-4696-436c-b425-4d35a3225815 {
+        fill: #122d3d;
+      }
+
+      .\32 018e9ca-4759-4ee7-8aa8-9d0e2893ecbe {
+        fill: #009eb0;
+      }
+
+      .fd54f950-6cac-494b-955b-6b845c3c7346 {
+        fill: #999;
+      }
+
+      .\37 3ad7944-7e09-4a62-b3b7-25eda5fb12f4 {
+        fill: #eee;
+      }
+
+      .\32 0091bfb-3ddf-46fb-a0cb-2bc4bd755617 {
+        fill: #1764c0;
+      }
+
+      .\31 33d33e4-470c-423d-82e7-f47debae2a39 {
+        fill: #795548;
+      }
+
+      .f02ee9d9-370a-4976-87a3-475a9bc40f7d {
+        fill: #bfbfbf;
+      }
+
+      .a1fc7caa-0777-436e-aa31-28f150cf1220 {
+        fill: #f44364;
+      }
+
+      .f3d12e26-0320-44dc-9c6f-3bdd810113f7 {
+        fill: #3e2723;
+      }
+
+      .grandpa-eyes {
+        animation-name: grandpa-eyes;
+        animation-duration: 16s;
+        animation-iteration-count:infinite;
+        transform-origin: 27% 26%;
+        animation-timing-function: linear;
+      }
+
+      .grandpa-leftarm {
+        animation-name: grandpa-leftarm;
+        animation-duration: 7s;
+        animation-iteration-count:infinite;
+        transform-origin: 19.7751820732% 50.5979353344%;
+        animation-timing-function: linear;
+      }
+
+      .daughter-eyes {
+        animation-name: daughter-eyes;
+        animation-duration: 10s;
+        animation-iteration-count:infinite;
+        transform-origin: 59.5% 21%;
+        animation-timing-function: linear;
+      }
+
+      .daughter-rightarm {
+        animation-name: daughter-rightarm;
+        animation-duration: 12s;
+        animation-iteration-count:infinite;
+        transform-origin: 64.5855127701% 52.3014548056%;
+        animation-timing-function: linear;
+      }
+
+      @keyframes grandpa-eyes {
+        0% {transform: scaleY(1);}
+        1% {transform: scaleY(0);}
+        2% {transform: scaleY(1);}
+        100% {transform: scaleY(1);}
+      }
+
+      @keyframes grandpa-leftarm {
+      0% {transform: rotate(5deg);}
+      50% {transform: rotate(-5deg);}
+      100% {transform: rotate(5deg);}
+      }
+
+      @keyframes daughter-eyes {
+        0% {transform: scaleY(1);}
+        45% {transform: scaleY(1);}
+        46% {transform: scaleY(0);}
+        47% {transform: scaleY(1);}
+        85% {transform: scaleY(1);}
+        86% {transform: scaleY(0);}
+        87% {transform: scaleY(1);}
+        100% {transform: scaleY(1);}
+      }
+
+      @keyframes daughter-rightarm {
+        0% {transform: rotate(5deg);}
+        50% {transform: rotate(-5deg);}
+        100% {transform: rotate(5deg);}
+      }
+    </style>
+  </defs>
+  <title>grandpa</title>
+  <rect class="d7942f66-1d7d-4f61-962c-8a4917ecae7e" x="106.86" y="112.81" width="37" height="15" rx="7.5" ry="7.5"/>
+  <g>
+    <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="84.55" y="113.27" width="27.16" height="15.15" rx="7.58" ry="7.58" transform="translate(196.27 241.69) rotate(180)"/>
+    <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="98.01" y="117.06" width="19.59" height="7.58" rx="3.79" ry="3.79" transform="translate(215.61 241.69) rotate(-180)"/>
+    <rect class="0400c3a2-393c-4e73-b84f-7777ddee81c4" x="98.75" y="106.39" width="6.65" height="13.55" rx="3.32" ry="3.32" transform="translate(-39.26 170.17) rotate(-69.92)"/>
+  </g>
+  <rect class="d7942f66-1d7d-4f61-962c-8a4917ecae7e" x="128.86" y="112.81" width="45" height="15" rx="7.5" ry="7.5"/>
+  <rect class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" x="144.72" y="35" width="70" height="50"/>
+  <path class="d7942f66-1d7d-4f61-962c-8a4917ecae7e" d="M204.8,168V132a25,25,0,0,0-50,0v36Z"/>
+  <path class="0400c3a2-393c-4e73-b84f-7777ddee81c4" d="M179.3,91h0a7.5,7.5,0,0,1,7.5,7.5v10a7.5,7.5,0,0,1-7.5,7.5h0a7.5,7.5,0,0,1-7.5-7.5v-10A7.5,7.5,0,0,1,179.3,91Z"/>
+  <circle class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" cx="179.72" cy="35" r="35" transform="translate(116.38 206.79) rotate(-80.78)"/>
+  <circle class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" cx="204.55" cy="55.75" r="6.75"/>
+  <circle class="2dba86c9-10e3-440a-b2f3-dae30ea7bfb6" cx="204.55" cy="55.75" r="2.84"/>
+  <circle class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" cx="154.55" cy="55.75" r="6.75"/>
+  <circle class="0400c3a2-393c-4e73-b84f-7777ddee81c4" cx="154.55" cy="55.75" r="2.84"/>
+  <path class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" d="M179.72,13h0a25,25,0,0,1,25,25V79a25,25,0,0,1-25,25h0a25,25,0,0,1-25-25V38A25,25,0,0,1,179.72,13Z"/>
+  <g class="daughter-eyes">
+    <ellipse class="0faec64c-07aa-4249-9f46-99dc30630129" cx="169.8" cy="49.15" rx="2.5" ry="4.65"/>
+    <ellipse class="0faec64c-07aa-4249-9f46-99dc30630129" cx="189.8" cy="49.15" rx="2.5" ry="4.65"/>
+  </g>
+  <path class="0400c3a2-393c-4e73-b84f-7777ddee81c4" d="M179.72,53.8h0a5,5,0,0,1,5,5v5a5,5,0,0,1-5,5h0a5,5,0,0,1-5-5v-5A5,5,0,0,1,179.72,53.8Z"/>
+  <path class="2564ecf8-e9ae-45dc-a2aa-4a7ed1c57dc8" d="M165.89,76.14a14,14,0,0,0-.67,4.36,14.5,14.5,0,0,0,29,0v-.64Z"/>
+  <path class="03c99511-4696-436c-b425-4d35a3225815" d="M179.8,193a25,25,0,0,0,25-25h-50a25,25,0,0,0,25,25Z"/>
+  <path class="03c99511-4696-436c-b425-4d35a3225815" d="M161.59,182H171a.3.3,0,0,1,.29.31V234.5a.3.3,0,0,1-.29.31h-9.42a.3.3,0,0,1-.29-.31V182.26A.3.3,0,0,1,161.59,182Z"/>
+  <rect class="03c99511-4696-436c-b425-4d35a3225815" x="188.3" y="181.95" width="10" height="52.86"/>
+  <path class="2018e9ca-4759-4ee7-8aa8-9d0e2893ecbe" d="M161.3,224.81a10,10,0,0,0-10,10h20A10,10,0,0,0,161.3,224.81Z"/>
+  <path class="2018e9ca-4759-4ee7-8aa8-9d0e2893ecbe" d="M198.3,224.81a10,10,0,0,0-10,10h20A10,10,0,0,0,198.3,224.81Z"/>
+  <g class="daughter-rightarm">
+    <rect class="d7942f66-1d7d-4f61-962c-8a4917ecae7e" x="198.81" y="108.79" width="15.11" height="45.32" rx="7.55" ry="7.55" transform="translate(-21 221.85) rotate(-54.18)"/>
+    <rect class="d7942f66-1d7d-4f61-962c-8a4917ecae7e" x="210.91" y="130.33" width="45.32" height="15.11" rx="7.55" ry="7.55" transform="translate(-18.94 38.85) rotate(-9.14)"/>
+    <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="257" y="121.59" width="8.46" height="25.98" rx="4.23" ry="4.23" transform="translate(125.75 395.34) rotate(-89.8)"/>
+    <rect class="0400c3a2-393c-4e73-b84f-7777ddee81c4" x="256.86" y="124.33" width="13.55" height="6.65" rx="3.32" ry="3.32" transform="matrix(0.94, -0.34, 0.34, 0.94, -27.59, 96.24)"/>
+    <rect class="fd54f950-6cac-494b-955b-6b845c3c7346" x="231.13" y="95.11" width="73" height="6" transform="matrix(0.09, -1, 1, 0.09, 145.31, 355.58)"/>
+    <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="259.13" y="121.09" width="15.11" height="27" rx="7.55" ry="7.55" transform="translate(131.16 400.81) rotate(-89.8)"/>
+    <rect class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" x="240.4" y="32.5" width="59.56" height="33.5" rx="10.25" ry="10.25" transform="matrix(1, -0.03, 0.03, 1, -1.42, 8.56)"/>
+  </g>
+  <circle class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" cx="166.3" cy="20" r="15"/>
+  <circle class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" cx="189.8" cy="21.33" r="15"/>
+  <circle class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" cx="156.04" cy="31.38" r="6.12"/>
+  <circle class="924d3410-33bb-4dc6-bfe7-a56c6f7563e5" cx="203.22" cy="28.89" r="9"/>
+  <g>
+    <g class="grandpa-leftarm">
+      <rect class="73ad7944-7e09-4a62-b3b7-25eda5fb12f4" x="38.12" y="86.17" width="15.11" height="45.32" rx="7.55" ry="7.55" transform="translate(-69.43 82.72) rotate(-54.45)"/>
+      <rect class="73ad7944-7e09-4a62-b3b7-25eda5fb12f4" x="18.23" y="63.34" width="15.11" height="45.32" rx="7.55" ry="7.55" transform="translate(-36.71 21.54) rotate(-27.42)"/>
+      <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="2.78" y="42.64" width="15.11" height="27.19" rx="7.55" ry="7.55" transform="translate(-24.73 11.08) rotate(-27.42)"/>
+      <rect class="0400c3a2-393c-4e73-b84f-7777ddee81c4" x="14.6" y="48.98" width="6.65" height="13.55" rx="3.32" ry="3.32" transform="translate(-7.16 2.83) rotate(-7.54)"/>
+    </g>
+    <rect class="0400c3a2-393c-4e73-b84f-7777ddee81c4" x="130.09" y="162.32" width="6.65" height="13.55" rx="3.32" ry="3.32" transform="translate(-20.09 18) rotate(-7.18)"/>
+    <rect class="73ad7944-7e09-4a62-b3b7-25eda5fb12f4" x="96" y="116.31" width="31.64" height="15" rx="6.6" ry="6.6" transform="translate(36.81 -25.21) rotate(15.37)"/>
+    <rect class="73ad7944-7e09-4a62-b3b7-25eda5fb12f4" x="106.63" y="131.09" width="39.58" height="15" rx="6.6" ry="6.6" transform="translate(191.71 -37.27) rotate(62.74)"/>
+    <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="127.82" y="156.69" width="19.59" height="7.58" rx="3.33" ry="3.33" transform="translate(217.23 -35.36) rotate(62.74)"/>
+    <g>
+      <path class="73ad7944-7e09-4a62-b3b7-25eda5fb12f4" d="M105.86,166.86v-36a25,25,0,0,0-50,0v36Z"/>
+      <path class="20091bfb-3ddf-46fb-a0cb-2bc4bd755617" d="M96.48,119.66v-8.31a24.93,24.93,0,0,0-6.25-3.67v12a9.39,9.39,0,0,1-18.75,0v-12a24.93,24.93,0,0,0-6.25,3.67v8.31A9.13,9.13,0,0,1,56,128.53c-.07.77-.11,1.54-.11,2.33v36h50v-36a22.44,22.44,0,0,0-.12-2.33A9.13,9.13,0,0,1,96.48,119.66Z"/>
+      <path class="133d33e4-470c-423d-82e7-f47debae2a39" d="M80.86,191.86a25,25,0,0,0,25-25h-50a25,25,0,0,0,25,25Z"/>
+      <path class="133d33e4-470c-423d-82e7-f47debae2a39" d="M62.65,180.81h9.42a.3.3,0,0,1,.29.32v53.36a.3.3,0,0,1-.29.32H62.65a.3.3,0,0,1-.29-.32V181.13A.3.3,0,0,1,62.65,180.81Z"/>
+      <rect class="133d33e4-470c-423d-82e7-f47debae2a39" x="89.36" y="180.81" width="10" height="54"/>
+      <path class="2018e9ca-4759-4ee7-8aa8-9d0e2893ecbe" d="M62.36,224.81a10,10,0,0,0-10,10h20A10,10,0,0,0,62.36,224.81Z"/>
+      <path class="2018e9ca-4759-4ee7-8aa8-9d0e2893ecbe" d="M99.36,224.81a10,10,0,0,0-10,10h20A10,10,0,0,0,99.36,224.81Z"/>
+    </g>
+    <g>
+      <path class="0400c3a2-393c-4e73-b84f-7777ddee81c4" d="M80.86,90.81h0a7.5,7.5,0,0,1,7.5,7.5v10a7.5,7.5,0,0,1-7.5,7.5h0a7.5,7.5,0,0,1-7.5-7.5v-10A7.5,7.5,0,0,1,80.86,90.81Z"/>
+      <circle class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" cx="105.55" cy="62.56" r="6.75"/>
+      <circle class="2dba86c9-10e3-440a-b2f3-dae30ea7bfb6" cx="105.55" cy="62.56" r="2.84"/>
+      <circle class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" cx="55.55" cy="62.56" r="6.75"/>
+      <circle class="0400c3a2-393c-4e73-b84f-7777ddee81c4" cx="55.55" cy="62.56" r="2.84"/>
+      <path class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" d="M80.86,33.81h0c13.8,0,25,9.22,25,20.6V88.2c0,11.38-11.2,20.61-25,20.61h0c-13.81,0-25-9.23-25-20.61V54.41C55.86,43,67.05,33.81,80.86,33.81Z"/>
+      <g class="grandpa-eyes">
+        <circle class="0faec64c-07aa-4249-9f46-99dc30630129" cx="70.8" cy="61.96" r="2.5"/>
+        <circle class="0faec64c-07aa-4249-9f46-99dc30630129" cx="90.8" cy="61.96" r="2.5"/>
+      </g>
+      <path class="f02ee9d9-370a-4976-87a3-475a9bc40f7d" d="M80.86,67.62a15,15,0,0,0-15,15h30A15,15,0,0,0,80.86,67.62Z"/>
+      <path class="0400c3a2-393c-4e73-b84f-7777ddee81c4" d="M80.72,60.61h0a5,5,0,0,1,5,5v5a5,5,0,0,1-5,5h0a5,5,0,0,1-5-5v-5A5,5,0,0,1,80.72,60.61Z"/>
+      <rect class="f02ee9d9-370a-4976-87a3-475a9bc40f7d" x="45.86" y="47.62" width="20" height="10" rx="5" ry="5"/>
+      <rect class="f02ee9d9-370a-4976-87a3-475a9bc40f7d" x="95.86" y="47.62" width="20" height="10" rx="5" ry="5"/>
+      <g>
+        <path class="a1fc7caa-0777-436e-aa31-28f150cf1220" d="M80.86,93.82a10,10,0,0,0,5.6-1.72,6,6,0,0,0-11.21,0A10,10,0,0,0,80.86,93.82Z"/>
+        <path class="0faec64c-07aa-4249-9f46-99dc30630129" d="M70.94,82.62a9.42,9.42,0,0,0-.08,1.2,10,10,0,0,0,4.39,8.28,6,6,0,0,1,11.21,0,10,10,0,0,0,4.4-8.28,11.7,11.7,0,0,0-.08-1.2Z"/>
+      </g>
+    </g>
+    <rect class="f3d12e26-0320-44dc-9c6f-3bdd810113f7" x="146.86" y="229.81" width="5" height="5"/>
+    <path class="133d33e4-470c-423d-82e7-f47debae2a39" d="M146.86,176.81v13h5v-13a10,10,0,0,0-20,0h5a5,5,0,0,1,10,0Z"/>
+    <rect class="133d33e4-470c-423d-82e7-f47debae2a39" x="146.86" y="189.81" width="5" height="44"/>
+    <path class="2564ecf8-e9ae-45dc-a2aa-4a7ed1c57dc8" d="M88.36,112.59l-5.86,3a1.82,1.82,0,0,0-1.61-1.08,1.81,1.81,0,0,0-1.65,1l-5.75-3.2L73.36,120l6-2.69a1.78,1.78,0,0,0,1.43.77,1.81,1.81,0,0,0,1.47-.71l5.93,2.89Z"/>
+    <rect class="5ad00e7f-7862-4128-a0a0-6a1d1ecceb07" x="128.47" y="161.5" width="27.16" height="15.15" rx="6.66" ry="6.66" transform="translate(227.28 -34.64) rotate(62.74)"/>
+  </g>
+</svg>

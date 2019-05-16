@@ -1,0 +1,82 @@
+body, html {
+  width: 100%;
+  min-height: 100%;
+
+  overflow-x: hidden;
+}
+
+.fsm-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px
+}
+
+.CTA {
+  background-color: rgb(255,128,0);
+  padding: 10px 20px;
+  border-radius: 500px;
+  color: white;
+
+  &:hover {
+    color: white;
+    background-color: rgb(235,118,0);
+  }
+}
+
+.mt-10 { margin-top: 10px; }
+.mt-50 { margin-top: 50px; }
+
+.soft-boxshadow {
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+}
+
+/* responsive youtube embed */
+.container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  text-transform: uppercase;
+  font-family: $font-primary;
+  font-weight: 900;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.fsm-toggle {
+  background-color: rgb(0,0,0);
+
+  .fsm-hamburger {
+    div {
+      background-color: white;
+    }
+  }
+}
+
+.back {
+  background-color: rgb(255,255,255);
+  padding: 10px 20px;
+  border-radius: 500px;
+  font-family: $font-primary;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 10;
+
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.33);
+}

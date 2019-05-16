@@ -1,0 +1,5 @@
+{
+  "source": "src/html",
+  "templates": "src/html/html_sections",
+  "output": "build"
+}
