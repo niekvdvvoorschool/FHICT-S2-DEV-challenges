@@ -10,7 +10,9 @@ Om wat meer te oefenen met Flexbox heb ik een simpele website gemaakt met Flexbo
   - flex-start
   - align-items
  
+# Wat heb ik er van geleerd
 
+  - Basis van Flexbox
 
 **Copyright Niek van de Vondervoort 2019**
 info@niekvandevondervoort.com
